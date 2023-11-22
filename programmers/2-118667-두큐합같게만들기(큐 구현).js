@@ -30,7 +30,7 @@ class Que {
   }
 
   size() {
-    return this.map.size();
+    return this.map.size;
   }
 }
 
