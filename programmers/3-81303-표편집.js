@@ -44,8 +44,6 @@ function solution(n, k, cmd) {
     headNode = headNode.next;
   }
 
-  console.log(arr.join(""));
-
   function U(value) {
     for (let i = 0; i < value; i++) {
       curNode = curNode.prev;
@@ -90,6 +88,6 @@ function solution(n, k, cmd) {
       popNode.prev.next = popNode;
     }
   }
-}
 
-solution(8, 2, ["D 2", "C", "U 3", "C", "D 4", "C", "U 2", "Z", "Z"]);
+  return arr.join("");
+}
