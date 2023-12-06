@@ -37,8 +37,8 @@ const topologySort = () => {
 for (let i = 1; i <= m; i++) {
   const [a, b] = input[i].split(" ").map(Number);
 
-  list[a].push(b);
   d[b]++;
+  list[a].push(b);
 }
 
 topologySort();
