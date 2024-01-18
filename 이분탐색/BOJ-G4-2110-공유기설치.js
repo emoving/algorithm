@@ -1,3 +1,9 @@
+/**
+ * 매개 변수 탐색
+ *
+ * 매개 변수값을 찾는 문제, 최소값을 1로잡고 최대값을 주어진 최대 간격으로 잡아서
+ * 중간값으로 대입하며 가능한지 여부에 따라 최소 최대값을 중간값 전후로 바꿔주며 매개 변수를 찾는다
+ */
 const input = require("fs")
   .readFileSync(process.platform == "linux" ? 0 : "input.txt")
   .toString()
